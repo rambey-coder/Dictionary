@@ -25,7 +25,7 @@ body {
     position: relative;
 }
 
-.search-box > i {
+.search-box > form > i {
     position: absolute;
     font-size: 20px;
     color: #4343438c;
@@ -35,11 +35,26 @@ body {
     transform: translate(50%, 26%);
 }
 
-.search-box > #search {
+.search-box > form > #search {
     width: 100%;
     padding: 8px 35px;
     padding-right: 10px;
     outline: 0;
     border: 2px solid transparent;
     border-radius: 4px;
+}
+
+.button {
+    width: 150px;
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
