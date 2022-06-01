@@ -11,25 +11,7 @@ btn.addEventListener('submit', (e) => {
         .then(res => res.json())
         .then(data => {
             setData(data)
-
-            // console.log(data);
-
-            // resultContent.innerHTML = `
-            // <div>
-            //     <h1>${data[0].word}</h1>
-            //     <div>
-            //         <p>${data[0].phonetic}</p>
-            //         <p>${data[0].meanings[0].partOfSpeech}</p>
-            //         <p>${data[0].meanings[0].definitions[0].definition}</p>
-            //         <p>${data[1].meanings[0].definitions[0].definition}</p>
-            //     </div>
-            // </div>
-            // `;
-
         })
-
-        // <p>${element.meanings[i, 1].definitions[0].definition}</p>
-
 
         const setData = (results) => {
             results.forEach((element, i) => {
@@ -42,6 +24,10 @@ btn.addEventListener('submit', (e) => {
                             <p>${element.meanings[i].partOfSpeech}</p>
                             <p>${element.meanings[i].definitions[0].definition}</p>
                             <p>${element.meanings[i].definitions[3].definition}</p>
+                        </div>
+
+                        <div>
+                            <p>${element.meanings[i].definitions[0].example || ''}</p>
                         </div>
 
                         <div class='related-meaning'>
