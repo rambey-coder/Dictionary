@@ -29,23 +29,6 @@ btn.addEventListener('submit', (e) => {
                         <div>
                             <p>${element.meanings[i].definitions[0].example || ''}</p>
                         </div>
-
-                        <div class='related-meaning'>
-                            <div class='synonyms'>
-                                <h1>Synonyms:</h1>
-                                <ul>
-                                    <li>${element.meanings[i].synonyms[0]}</li>
-                                    <li>${element.meanings[i].synonyms[1]}</li>
-                                </ul>
-                            </div>
-                            <div class='antonyms'>
-                                <h1>Antonyms:</h1>
-                                <ul>
-                                    <li>${element.meanings[i].antonyms[0]}</li>
-                                    <li>${element.meanings[i].antonyms[1]}</li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 `;
             });
