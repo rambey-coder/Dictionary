@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -40,7 +42,7 @@ body {
     background: #2436426e;
     padding: 9px 35px;
     padding-right: 10px;
-    color: #8f8f8fea;
+    color: rgba(255, 255, 255, 0.849);
     font-weight: 600;
     font-size: 14px;
     outline: 0;
@@ -61,7 +63,7 @@ body {
     border-radius: 4px;
     background: linear-gradient(to right, #16222a, #3a6073);
     cursor: pointer;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.849);
     font-weight: 600;
 }
 
@@ -74,4 +76,56 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.result-output {
+    margin-top: 2rem;
+}
+
+body > div > div.result-output > div > h1 {
+    font-family: 'Tiro Telugu', serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.849);
+}
+
+div.result-meaning > p:nth-child(1) {
+    color: #009ae7c0;
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+div.result-meaning > p:nth-child(2) {
+    color: rgba(92, 92, 92, 0.575);
+    font-size: 13px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 13px;
+}
+
+div.result-meaning > p:nth-child(3) {
+    color: rgba(255, 255, 255, 0.849);
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 13px;
+}
+
+div.result-meaning > p:nth-child(4) {
+    color: #009ae7c0;
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 13px;
+}
+
+div > div:nth-child(3) > p {
+    color: rgba(180, 180, 180, 0.747);
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 400;
+    border-left: 3px solid #009ae7c0;
+    /* border-radius: 10px; */
+    padding: 7px;
+    margin-bottom: 13px;
 }
