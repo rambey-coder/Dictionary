@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    max-width: 40%;
+    min-width: 40%;
     margin: auto;
 }
 
@@ -128,4 +128,10 @@ div > div:nth-child(3) > p {
     /* border-radius: 10px; */
     padding: 7px;
     margin-bottom: 13px;
+}
+
+@media screen and (max-width: 822px) {
+    .container {
+        width: 60%;
+    }
 }
