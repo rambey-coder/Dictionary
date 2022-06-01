@@ -17,8 +17,8 @@ body {
 }
 
 .container {
-    max-width: 800px;
-    padding: 10px;
+    max-width: 40%;
+    margin: auto;
 }
 
 .search-box {
@@ -27,21 +27,30 @@ body {
 
 .search-box > form > i {
     position: absolute;
-    font-size: 20px;
-    color: #4343438c;
+    font-size: 17px;
+    color: #009ae7c0;
     font-weight: 600;
     bottom: 0;
     top: 0;
-    transform: translate(50%, 26%);
+    transform: translate(50%, 26%); 
 }
 
 .search-box > form > #search {
     width: 100%;
-    padding: 8px 35px;
+    background: #2436426e;
+    padding: 9px 35px;
     padding-right: 10px;
+    color: #8f8f8fea;
+    font-weight: 600;
+    font-size: 14px;
     outline: 0;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-radius: 4px;
+}
+
+.search-box > form > #search:focus {
+    border: 1px solid #009ae7c0;
+    transition: .5s linear;
 }
 
 .button {
@@ -50,7 +59,15 @@ body {
     border: 0;
     padding: 10px;
     border-radius: 4px;
+    background: linear-gradient(to right, #16222a, #3a6073);
     cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+}
+
+.button:active {
+    transform: scale(1.1);
+    transition: all .4s linear;
 }
 
 .submit {
